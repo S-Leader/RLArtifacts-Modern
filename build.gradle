@@ -1,0 +1,160 @@
+buildscript {
+    repositories {
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    }
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '6.0.42'
+}
+
+apply plugin: 'org.spongepowered.mixin'
+
+jarJar.enable()
+
+group = maven_group
+version = mod_version
+base {
+    archivesName = archives_base_name
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+sourceSets {
+    main.resources.srcDirs = ['src/main/resources', 'src/generated/resources']
+}
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    copyIdeResources = true
+
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                artifacts {
+                    source sourceSets.main
+                }
+            }
+        }
+        client {}
+        server {
+            args '--nogui'
+        }
+        data {
+            workingDirectory project.file('run-data')
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+        }
+    }
+}
+
+mixin {
+    add sourceSets.main, 'artifacts.refmap.json'
+    config 'mixins.artifacts.json'
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://jitpack.io' }
+    maven {
+        url = 'https://cursemaven.com'
+        content { includeGroup 'curse.maven' }
+    }
+    maven {
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
+    }
+    maven {
+        url = 'https://maven.theillusivec4.top/'
+        content { includeGroupByRegex 'top.theillusivec4.*' }
+    }
+    maven {
+        url = 'https://maven.florens.be/releases'
+        content { includeGroup 'be.florens' }
+    }
+    maven {
+        url = 'https://maven.shedaniel.me/'
+        content { includeGroupByRegex 'me.shedaniel.*' }
+    }
+    maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${forge_version}"
+
+    implementation fg.deobf("be.florens:expandability-forge:${expandability_version}")
+    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:${mixin_extras_version}")) {
+        jarJar.ranged(it, "[${mixin_extras_version},)")
+    }
+
+    compileOnly fg.deobf("curse.maven:cosmetic-armor-reworked-237307:4600191")
+    runtimeOnly fg.deobf("maven.modrinth:curious-armor-stands:1.20-5.0.1")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+processResources {
+    def replaceProperties = [version: project.version]
+    inputs.properties replaceProperties
+    filesMatching('META-INF/mods.toml') {
+        expand replaceProperties
+    }
+}
+
+def removedAccessories = [
+        'novelty_drinking_hat', 'villager_hat', 'superstitious_hat', 'cowboy_hat', 'anglers_hat',
+        'lucky_scarf', 'scarf_of_invisibility', 'cross_necklace', 'charm_of_sinking',
+        'universal_attractor', 'crystal_heart', 'helium_flamingo', 'chorus_totem',
+        'digging_claws', 'golden_hook', 'onion_ring', 'pickaxe_heater', 'aqua_dashers',
+        'bunny_hoppers', 'kitty_slippers', 'running_shoes', 'snowshoes',
+        'steadfast_spikes', 'flippers', 'rooted_boots'
+]
+
+// Keep the same Forge-side resource filtering that the original multi-loader project applied in shadowJar.
+tasks.withType(Jar).configureEach {
+    removedAccessories.each { id ->
+        exclude "assets/artifacts/models/item/${id}.json"
+        exclude "assets/artifacts/textures/item/${id}.png"
+        exclude "assets/artifacts/textures/entity/wearable/${id}.png"
+        exclude "assets/artifacts/textures/entity/wearable/${id}/**"
+    }
+    exclude 'data/artifacts/tags/blocks/mineable/digging_claws.json'
+    exclude 'data/artifacts/tags/blocks/rooted_boots_grass.json'
+    exclude 'data/artifacts/tags/entity_types/creepers.json'
+}
+
+jar {
+    manifest {
+        attributes([
+                'Specification-Title'     : mod_id,
+                'Specification-Vendor'    : 'ochotonida',
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : 'ochotonida'
+        ])
+    }
+    archiveClassifier.set('slim')
+    finalizedBy 'reobfJar'
+}
+
+tasks.named('jarJar') {
+    archiveClassifier.set('')
+    finalizedBy 'reobfJarJar'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

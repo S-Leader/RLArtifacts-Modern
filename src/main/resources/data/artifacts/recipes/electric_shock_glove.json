@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "artifacts:vampiric_glove" },
+    { "item": "artifacts:shock_pendant" }
+  ],
+  "result": {
+    "item": "artifacts:electric_shock_glove",
+    "count": 1
+  }
+}

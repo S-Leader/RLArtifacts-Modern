@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "name": "main",
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:plastic_drinking_hat"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "artifacts:items/drinking_hat"
+}

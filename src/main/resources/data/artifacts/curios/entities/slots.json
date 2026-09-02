@@ -1,0 +1,24 @@
+{
+  "entities": [
+    "player",
+    "husk",
+    "skeleton",
+    "zombie",
+    "drowned",
+    "stray",
+    "wither_skeleton",
+    "piglin",
+    "piglin_brute",
+    "zombified_piglin",
+    "ghast"
+  ],
+  "slots": [
+    "head",
+    "necklace",
+    "belt",
+    "body",
+    "charm",
+    "ring",
+    "hands"
+  ]
+}

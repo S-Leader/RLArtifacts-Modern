@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "artifacts.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "accessors.LivingEntityAccessor",
+    "accessors.MobAccessor",
+    "debug.TagLoaderMixin",
+    "gamerule.BooleanValueInvoker",
+    "gamerule.IntegerValueInvoker",
+    "item.umbrella.EntityMixin",
+    "item.wearable.NaturalSpawnerMixin",
+    "item.wearable.pendant.EnchantmentHelperMixin"
+  ],
+  "client": [
+    "accessors.client.LivingEntityRendererAccessor",
+    "item.umbrella.client.HumanoidModelMixin",
+    "item.wearable.pocketpiston.client.ItemInHandLayerMixin",
+    "item.wearable.pocketpiston.client.LivingEntityMixin"
+  ],
+  "server": [
+    "item.umbrella.server.ServerGamePacketListenerImplMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "artifacts.refmap.json"
+}
