@@ -42,7 +42,7 @@ public class ModGameRules {
             STAR_CLOAK_MAX_STARS = integerValue(createName(ModItems.STAR_CLOAK, "maximumStars"), 6, 64),
             STAR_CLOAK_DAMAGE = integerValue(createName(ModItems.STAR_CLOAK, "starDamage"), 8, 100),
 
-            ANTIDOTE_VESSEL_MAX_EFFECT_DURATION = durationSeconds(createName(ModItems.ANTIDOTE_VESSEL, "maxEffectDuration"), 5),
+    ANTIDOTE_VESSEL_MAX_EFFECT_DURATION = durationSeconds(createName(ModItems.ANTIDOTE_VESSEL, "maxEffectDuration"), 5),
             FIRE_GAUNTLET_FIRE_DURATION = durationSeconds(createName(ModItems.FIRE_GAUNTLET, "fireDuration"), 8),
             FLAME_PENDANT_COOLDOWN = durationSeconds(createName(ModItems.FLAME_PENDANT, "cooldown"), 0),
             FLAME_PENDANT_FIRE_DURATION = durationSeconds(createName(ModItems.FLAME_PENDANT, "fireDuration"), 10),
@@ -52,7 +52,7 @@ public class ModGameRules {
             SHOCK_PENDANT_COOLDOWN = durationSeconds(createName(ModItems.SHOCK_PENDANT, "cooldown"), 0),
             THORN_PENDANT_COOLDOWN = durationSeconds(createName(ModItems.THORN_PENDANT, "cooldown"), 0),
 
-            PANIC_NECKLACE_SPEED_LEVEL = mobEffectLevel(createName(ModItems.PANIC_NECKLACE, "speedLevel"), 1);
+    PANIC_NECKLACE_SPEED_LEVEL = mobEffectLevel(createName(ModItems.PANIC_NECKLACE, "speedLevel"), 1);
 
     public static final DoubleValue
             CLOUD_IN_A_BOTTLE_SPRINT_JUMP_VERTICAL_VELOCITY = doubleValue(createName(ModItems.CLOUD_IN_A_BOTTLE, "sprintJumpVerticalVelocity"), 50, 100 * 100, 100),

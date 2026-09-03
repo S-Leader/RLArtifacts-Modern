@@ -10,7 +10,9 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 
 import java.util.UUID;
 
-/** Combines the Power Glove's damage bonus and the Feral Claws' speed bonus. */
+/**
+ * Combines the Power Glove's damage bonus and the Feral Claws' speed bonus.
+ */
 public class MechanicalGloveItem extends WearableArtifactItem {
 
     public MechanicalGloveItem() {

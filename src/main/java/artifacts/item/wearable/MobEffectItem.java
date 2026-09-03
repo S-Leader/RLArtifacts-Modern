@@ -17,7 +17,7 @@ public class MobEffectItem extends WearableArtifactItem {
     protected final Supplier<Boolean> isEnabled;
 
     public MobEffectItem(MobEffect mobEffect, Supplier<Boolean> isEnabled) {
-        this(mobEffect, () -> 1, 40,  isEnabled);
+        this(mobEffect, () -> 1, 40, isEnabled);
     }
 
     public MobEffectItem(MobEffect mobEffect, int duration, Supplier<Boolean> isEnabled) {

@@ -2,12 +2,12 @@ package artifacts.event;
 
 import artifacts.item.UmbrellaItem;
 import artifacts.item.wearable.belt.CloudInABottleItem;
-import artifacts.item.wearable.hands.VampiricGloveItem;
 import artifacts.item.wearable.hands.ElectricShockGloveItem;
-import artifacts.registry.ModItems;
-import artifacts.util.DamageSourceHelper;
+import artifacts.item.wearable.hands.VampiricGloveItem;
 import artifacts.item.wearable.head.DrinkingHatItem;
 import artifacts.registry.ModGameRules;
+import artifacts.registry.ModItems;
+import artifacts.util.DamageSourceHelper;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;

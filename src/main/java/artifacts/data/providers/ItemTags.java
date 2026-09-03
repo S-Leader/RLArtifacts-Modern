@@ -26,11 +26,9 @@ public class ItemTags extends ItemTagsProvider {
             NECKLACE = createTag("slot/necklace"),
             HANDS = createTag("slot/hands"),
             BELT = createTag("slot/belt"),
-            FEET = createTag("slot/feet"),
             BODY = createTag("slot/body"),
             CHARM = createTag("slot/charm"),
-            RING = createTag("slot/ring"),
-            ALL = createTag("slot/all");
+            RING = createTag("slot/ring");
 
     public static final TagKey<Item> ORIGINS_SHIELDS = TagKey.create(Registries.ITEM, new ResourceLocation("origins", "shields"));
 
@@ -73,11 +71,9 @@ public class ItemTags extends ItemTagsProvider {
                 ModItems.BUBBLE_WRAP.get(),
                 ModItems.WHOOPEE_CUSHION.get()
         );
-        tag(FEET);
         tag(BODY).add(ModItems.STAR_CLOAK.get());
         tag(CHARM).add(ModItems.LUCKY_CLOVER.get());
         tag(RING).add(ModItems.MAGMA_STONE.get());
-        tag(ALL);
 
         tag(ORIGINS_SHIELDS).add(
                 ModItems.UMBRELLA.get()

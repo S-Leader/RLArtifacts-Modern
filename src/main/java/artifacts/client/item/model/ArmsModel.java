@@ -86,7 +86,7 @@ public class ArmsModel extends HumanoidModel<LivingEntity> {
         mesh.getRoot().getChild("left_arm").addOrReplaceChild(
                 "artifact",
                 leftArm,
-                PartPose.offset(- 1 + armWidth / 2, 10, 0)
+                PartPose.offset(-1 + armWidth / 2, 10, 0)
         );
         mesh.getRoot().getChild("right_arm").addOrReplaceChild(
                 "artifact",
@@ -256,14 +256,14 @@ public class ArmsModel extends HumanoidModel<LivingEntity> {
         rightArm.addBox(-1 - armWidth / 2, h, armDepth / 2, armWidth + 2, 2, 1);
 
         leftArm.texOffs(0, 6);
-        leftArm.addBox(armWidth / 2, h, - armDepth / 2, 1, 2, armDepth);
+        leftArm.addBox(armWidth / 2, h, -armDepth / 2, 1, 2, armDepth);
         rightArm.texOffs(16, 6);
-        rightArm.addBox(armWidth / 2, h, - armDepth / 2, 1, 2, armDepth);
+        rightArm.addBox(armWidth / 2, h, -armDepth / 2, 1, 2, armDepth);
 
         leftArm.texOffs(0, 12);
-        leftArm.addBox(-1 - armWidth / 2, h, - armDepth / 2, 1, 2, armDepth);
+        leftArm.addBox(-1 - armWidth / 2, h, -armDepth / 2, 1, 2, armDepth);
         rightArm.texOffs(16, 12);
-        rightArm.addBox(-1 - armWidth / 2, h, - armDepth / 2, 1, 2, armDepth);
+        rightArm.addBox(-1 - armWidth / 2, h, -armDepth / 2, 1, 2, armDepth);
 
         return createEmptyArms(leftArm, rightArm, hasSlimArms);
     }
@@ -280,7 +280,7 @@ public class ArmsModel extends HumanoidModel<LivingEntity> {
         leftArm.texOffs(32, 0);
         leftArm.addBox(armWidth / 2 + 0.5F, 0.5F - 2 * deformationY - 1, -armDepth / 4, 1, 2, 2, deformation);
         rightArm.texOffs(48, 0);
-        rightArm.addBox(- armWidth / 2 - 1.5F, 0.5F - 2 * deformationY - 1, -armDepth / 4, 1, 2, 2, deformation);
+        rightArm.addBox(-armWidth / 2 - 1.5F, 0.5F - 2 * deformationY - 1, -armDepth / 4, 1, 2, 2, deformation);
 
         return createSleevedArms(leftArm, rightArm, hasSlimArms);
     }

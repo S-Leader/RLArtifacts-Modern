@@ -46,13 +46,6 @@
       "random/pop"
     ]
   },
-  "item.whoopee_cushion.fart": {
-    "sounds": [
-      "artifacts:fart1",
-      "artifacts:fart2"
-    ],
-    "subtitle": "artifacts.subtitles.item.whoopee_cushion.fart"
-  },
   "item.bubble_wrap.pop": {
     "sounds": [
       "artifacts:bubble_wrap/bubble_wrap_1",
@@ -60,5 +53,12 @@
       "artifacts:bubble_wrap/bubble_wrap_3"
     ],
     "subtitle": "artifacts.subtitles.item.bubble_wrap.pop"
+  },
+  "item.whoopee_cushion.fart": {
+    "sounds": [
+      "artifacts:fart1",
+      "artifacts:fart2"
+    ],
+    "subtitle": "artifacts.subtitles.item.whoopee_cushion.fart"
   }
 }

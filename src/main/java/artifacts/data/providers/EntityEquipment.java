@@ -31,8 +31,8 @@ public class EntityEquipment {
         addItems(EntityType.HUSK, ModItems.VAMPIRIC_GLOVE.get(), ModItems.THORN_PENDANT.get());
         addItems(EntityType.SKELETON, ModItems.FLAME_PENDANT.get());
         addItems(EntityType.STRAY, ModItems.PANIC_NECKLACE.get());
-        addItems(EntityType.WITHER_SKELETON, ModItems.FIRE_GAUNTLET.get(), ModItems.MAGMA_STONE.get(), ModItems.ANTIDOTE_VESSEL.get());
-        addItems(EntityType.ZOMBIFIED_PIGLIN, ModItems.FIRE_GAUNTLET.get());
+        addItems(EntityType.WITHER_SKELETON, ModItems.MAGMA_STONE.get(), ModItems.ANTIDOTE_VESSEL.get());
+        addItems(EntityType.ZOMBIFIED_PIGLIN, ModItems.MECHANICAL_GLOVE.get());
         addItems(EntityType.PIGLIN_BRUTE, ModItems.POWER_GLOVE.get());
         addItems(EntityType.GHAST, ModItems.STAR_CLOAK.get());
 

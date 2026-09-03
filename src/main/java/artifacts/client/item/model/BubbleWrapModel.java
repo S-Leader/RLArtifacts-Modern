@@ -10,7 +10,9 @@ import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.entity.LivingEntity;
 
-/** Exact 1.12 Bubble Wrap box, kept separate from the modern charm-belt model. */
+/**
+ * Exact 1.12 Bubble Wrap box, kept separate from the modern charm-belt model.
+ */
 public class BubbleWrapModel extends HumanoidModel<LivingEntity> {
 
     public BubbleWrapModel(ModelPart root) {

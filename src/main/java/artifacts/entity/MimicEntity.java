@@ -135,9 +135,9 @@ public class MimicEntity extends Mob implements Enemy {
         // noinspection ConstantConditions
         if (
                 attackCooldown <= 0
-                && player.getCommandSenderWorld().getDifficulty() != Difficulty.PEACEFUL
-                && distanceToSqr(player.getBoundingBox().getCenter().subtract(0, getBoundingBox().getYsize() / 2, 0)) < 1
-                && player.hurt(damageSources().mobAttack(this), (float) getAttribute(Attributes.ATTACK_DAMAGE).getValue())
+                        && player.getCommandSenderWorld().getDifficulty() != Difficulty.PEACEFUL
+                        && distanceToSqr(player.getBoundingBox().getCenter().subtract(0, getBoundingBox().getYsize() / 2, 0)) < 1
+                        && player.hurt(damageSources().mobAttack(this), (float) getAttribute(Attributes.ATTACK_DAMAGE).getValue())
         ) {
             attackCooldown = 20;
             doEnchantDamageEffects(this, player);

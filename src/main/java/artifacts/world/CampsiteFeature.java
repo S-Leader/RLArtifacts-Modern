@@ -42,7 +42,7 @@ public class CampsiteFeature extends Feature<CampsiteFeatureConfiguration> {
         }
 
         BlockPos.betweenClosedStream(origin.offset(-2, 0, -2), origin.offset(2, 2, 2))
-                .filter(pos -> Math.abs(pos.getX() - origin.getX()) < 2 ||  Math.abs(pos.getZ() - origin.getZ()) < 2)
+                .filter(pos -> Math.abs(pos.getX() - origin.getX()) < 2 || Math.abs(pos.getZ() - origin.getZ()) < 2)
                 .filter(pos -> !level.getBlockState(pos).isAir())
                 .forEach(pos -> setBlock(level, pos, Blocks.CAVE_AIR.defaultBlockState()));
 
@@ -97,7 +97,7 @@ public class CampsiteFeature extends Feature<CampsiteFeatureConfiguration> {
 
     private void placeFloor(CampsiteFeatureConfiguration config, WorldGenLevel level, BlockPos origin, RandomSource random) {
         BlockPos.betweenClosedStream(origin.offset(-2, -1, -2), origin.offset(2, -1, 2))
-                .filter(pos -> Math.abs(pos.getX() - origin.getX()) < 2 ||  Math.abs(pos.getZ() - origin.getZ()) < 2)
+                .filter(pos -> Math.abs(pos.getX() - origin.getX()) < 2 || Math.abs(pos.getZ() - origin.getZ()) < 2)
                 .forEach(pos -> {
                     if (!level.getBlockState(pos).isFaceSturdy(level, pos, Direction.UP)) {
                         setBlock(level, pos, config.floor().getState(random, pos));

@@ -5,8 +5,186 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f46bf8-f94c-469b-8e32-07533c0b8eda" name="更改" comment="RL facts.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/sounds/bubble_wrap/bubble_wrap_1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/sounds/bubble_wrap/bubble_wrap_2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/sounds/bubble_wrap/bubble_wrap_3.ogg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/anglers_hat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/antidote_vessel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/antidote_vessel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/aqua_dashers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/bubble_wrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/bubble_wrap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/bunny_hoppers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/charm_of_sinking.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/chorus_totem.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/cloud_in_a_bottle.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/cloud_in_a_bottle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/cowboy_hat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/cross_necklace.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/crystal_heart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/digging_claws.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/electric_shock_glove.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/electric_shock_glove.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/feral_claws.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/feral_claws.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/fire_gauntlet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/fire_gauntlet.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/flame_pendant.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/flame_pendant.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/flippers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/golden_hook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/helium_flamingo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/kitty_slippers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/lucky_clover.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/lucky_clover.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/lucky_scarf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/magma_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/magma_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/mechanical_glove.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/mechanical_glove.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/novelty_drinking_hat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/onion_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/panic_necklace.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/panic_necklace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/pickaxe_heater.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/plastic_drinking_hat.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/plastic_drinking_hat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/pocket_piston.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/pocket_piston.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/power_glove.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/power_glove.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/rooted_boots.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/running_shoes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/sacrificial_amulet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/sacrificial_amulet.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/scarf_of_invisibility.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/shock_pendant.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/shock_pendant.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/snowshoes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/star_cloak.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/star_cloak.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/steadfast_spikes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/superstitious_hat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/thorn_pendant.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/thorn_pendant.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/universal_attractor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/vampiric_glove.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/vampiric_glove.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/villager_hat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/whoopee_cushion.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/models/item/whoopee_cushion.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/assets/artifacts/sounds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/advancements/amateur_archaeologist.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/advancements/chest_slayer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/archaeology/desert_pyramid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/archaeology/desert_well.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/archaeology/ocean_ruin_cold.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/archaeology/ocean_ruin_warm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/archaeology/trail_ruins_rare.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/abandoned_mineshaft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/ancient_city.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/ancient_city_ice_box.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/bastion_hoglin_stable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/bastion_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/buried_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/desert_pyramid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/end_city_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/igloo_chest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/jungle_temple.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/nether_bridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/pillager_outpost.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/ruined_portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/shipwreck_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/spawn_bonus_chest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/stronghold_corridor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/underwater_ruin_big.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_armorer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_butcher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_desert_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_plains_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_savanna_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_snowy_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_taiga_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_tannery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_temple.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_toolsmith.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/village/village_weaponsmith.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_modifiers/inject/chests/woodland_mansion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/artifact.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/artifact.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/cobblestone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/cobblestone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/cobwebs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/cobwebs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/crops.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/crops.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/food.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/food.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/gems.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/gems.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/ingots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/ingots.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/minecarts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/minecarts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/ores.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/ores.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/rails.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/rails.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/tnt.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_barrel/tnt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_chest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/chests/campsite_chest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entities/mimic.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entities/mimic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/ghast.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/ghast.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/husk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/husk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/piglin_brute.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/piglin_brute.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/skeleton.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/skeleton.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/stray.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/stray.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/wither_skeleton.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/wither_skeleton.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/zombie.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/zombie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/zombified_piglin.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/entity_equipment/zombified_piglin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/archaeology/desert_pyramid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/archaeology/desert_well.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/archaeology/ocean_ruin_cold.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/archaeology/ocean_ruin_warm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/archaeology/trail_ruins_rare.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/abandoned_mineshaft.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/ancient_city.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/ancient_city_ice_box.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/bastion_hoglin_stable.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/bastion_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/buried_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/desert_pyramid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/end_city_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/igloo_chest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/jungle_temple.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/nether_bridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/pillager_outpost.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/ruined_portal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/shipwreck_treasure.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/spawn_bonus_chest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/stronghold_corridor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/underwater_ruin_big.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_armorer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_butcher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_desert_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_plains_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_savanna_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_snowy_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_taiga_house.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_tannery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_temple.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_toolsmith.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/village/village_weaponsmith.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/inject/chests/woodland_mansion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/items/drinking_hat.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/items/drinking_hat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/sacrificial_reward.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/loot_tables/sacrificial_reward.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/blocks/campsite_chests.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/blocks/campsite_chests.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/blocks/mineable/digging_claws.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/blocks/rooted_boots_grass.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/entity_types/creepers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/artifacts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/artifacts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/belt.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/belt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/body.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/body.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/charm.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/charm.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/feet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/hands.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/hands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/head.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/necklace.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/necklace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/ring.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/items/slot/ring.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/mob_effect/antidote_vessel_cancellable.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/tags/mob_effect/antidote_vessel_cancellable.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/worldgen/configured_feature/campsite.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/worldgen/configured_feature/campsite.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/artifacts/worldgen/placed_feature/underground_campsite.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/artifacts/worldgen/placed_feature/underground_campsite.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/industrialforegoing/tags/entity_types/mob_duplicator_blacklist.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/industrialforegoing/tags/entity_types/mob_duplicator_blacklist.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/minecraft/tags/items/piglin_loved.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/minecraft/tags/items/piglin_loved.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/origins/tags/items/shields.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/resources/data/origins/tags/items/shields.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/data/ArtifactsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/artifacts/data/ArtifactsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/Advancements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/EntityEquipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/EntityEquipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/ItemTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/ItemTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/LootModifiers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/artifacts/data/providers/LootModifiers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/artifacts/registry/ModLootTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/artifacts/registry/ModLootTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/flame_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/flame_pendant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/shock_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/shock_pendant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/thorn_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/entity/wearable/thorn_pendant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/feral_claws.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/feral_claws.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/flame_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/flame_pendant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/shock_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/shock_pendant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/thorn_pendant.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/artifacts/textures/item/thorn_pendant.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,18 +250,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.artifacts-1.20.1 [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.artifacts-1.20.1 [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.下载源代码.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/code/artifacts-1.20.1/src/main/resources/assets/artifacts/textures/item&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.artifacts-1.20.1 [build].executor": "Run",
+    "Gradle.artifacts-1.20.1 [createMcpToSrg].executor": "Run",
+    "Gradle.下载源代码.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/code/artifacts-1.20.1/src/main/resources/assets/artifacts/textures/item",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.19552414"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\code\artifacts-1.20.1\src\main\resources\assets\artifacts\textures\item" />
@@ -149,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788369735521</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="RL facts.">
+      <option name="closed" value="true" />
+      <created>1788369911437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788369911437</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -2,10 +2,10 @@ package artifacts.client.item;
 
 import artifacts.Artifacts;
 import artifacts.client.item.model.*;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 
 import java.util.function.Supplier;
 
@@ -17,12 +17,12 @@ public class ArtifactLayers {
             PENDANT = createLayerLocation("pendant"),
             LEGACY_AMULET = createLayerLocation("legacy_amulet"),
 
-            CLOUD_IN_A_BOTTLE = createLayerLocation("cloud_in_a_bottle"),
+    CLOUD_IN_A_BOTTLE = createLayerLocation("cloud_in_a_bottle"),
             ANTIDOTE_VESSEL = createLayerLocation("antidote_vessel"),
             BUBBLE_WRAP = createLayerLocation("bubble_wrap"),
             STAR_CLOAK = createLayerLocation("star_cloak"),
 
-            CLAWS_WIDE = createLayerLocation("claws_wide"),
+    CLAWS_WIDE = createLayerLocation("claws_wide"),
             CLAWS_SLIM = createLayerLocation("claws_slim"),
             GLOVE_WIDE = createLayerLocation("glove_wide"),
             GLOVE_SLIM = createLayerLocation("glove_slim"),
@@ -31,7 +31,7 @@ public class ArtifactLayers {
             POCKET_PISTON_WIDE = createLayerLocation("pocket_piston_wide"),
             POCKET_PISTON_SLIM = createLayerLocation("pocket_piston_slim"),
 
-            WHOOPEE_CUSHION = createLayerLocation("whoopee_cushion");
+    WHOOPEE_CUSHION = createLayerLocation("whoopee_cushion");
 
     public static ModelLayerLocation claws(boolean hasSlimArms) {
         return hasSlimArms ? CLAWS_SLIM : CLAWS_WIDE;

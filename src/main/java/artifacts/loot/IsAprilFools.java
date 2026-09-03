@@ -41,4 +41,4 @@ public record IsAprilFools() implements LootItemCondition {
             return new IsAprilFools();
         }
     }
- }
+}

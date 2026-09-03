@@ -18,7 +18,9 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.EventPriority;
 
-/** Restores RLArtifacts 1.12's unlooted-chest mimic replacement mechanic. */
+/**
+ * Restores RLArtifacts 1.12's unlooted-chest mimic replacement mechanic.
+ */
 public final class MimicChestEvents {
 
     private MimicChestEvents() {

@@ -3,13 +3,13 @@ package artifacts.item.wearable.hands;
 import artifacts.item.wearable.WearableArtifactItem;
 import artifacts.registry.ModGameRules;
 import artifacts.util.DamageSourceHelper;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
 public class PocketPistonItem extends WearableArtifactItem {
 

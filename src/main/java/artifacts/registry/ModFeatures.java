@@ -3,11 +3,11 @@ package artifacts.registry;
 import artifacts.Artifacts;
 import artifacts.world.CampsiteFeature;
 import artifacts.world.CampsiteFeatureConfiguration;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraftforge.registries.DeferredRegister;
 
 public class ModFeatures {
 

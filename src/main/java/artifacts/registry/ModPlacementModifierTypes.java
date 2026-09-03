@@ -4,9 +4,9 @@ import artifacts.Artifacts;
 import artifacts.world.placement.CampsiteCountPlacement;
 import artifacts.world.placement.CampsiteHeightRangePlacement;
 import artifacts.world.placement.CeilingHeightFilter;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.placement.PlacementModifierType;
+import net.minecraftforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 

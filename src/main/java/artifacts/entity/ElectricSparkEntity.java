@@ -15,7 +15,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-/** A small projectile that falls, settles, and shocks each touching enemy once. */
+/**
+ * A small projectile that falls, settles, and shocks each touching enemy once.
+ */
 public class ElectricSparkEntity extends ThrowableProjectile {
 
     private static final int MAX_LIFE = 80;

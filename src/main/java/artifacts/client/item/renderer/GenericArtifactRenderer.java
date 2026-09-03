@@ -59,7 +59,7 @@ public class GenericArtifactRenderer implements ArtifactRenderer {
         if (entity instanceof Ghast) {
             model.head.yRot = model.body.yRot;
             poseStack.scale(2.5F, 2.5F, 2.5F);
-            poseStack.translate(0, -2.5/16F, 0);
+            poseStack.translate(0, -2.5 / 16F, 0);
         }
 
         render(poseStack, multiBufferSource, light, stack.hasFoil() && !(entity instanceof Ghast));

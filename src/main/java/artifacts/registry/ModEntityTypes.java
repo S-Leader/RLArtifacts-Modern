@@ -1,13 +1,13 @@
 package artifacts.registry;
 
 import artifacts.Artifacts;
-import artifacts.entity.HallowStarEntity;
 import artifacts.entity.ElectricSparkEntity;
+import artifacts.entity.HallowStarEntity;
 import artifacts.entity.MimicEntity;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraftforge.registries.DeferredRegister;
 
 public class ModEntityTypes {
 

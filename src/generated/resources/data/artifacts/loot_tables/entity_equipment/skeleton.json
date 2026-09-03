@@ -1,8 +1,6 @@
 {
-  "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "conditions": [
         {
@@ -12,10 +10,11 @@
       ],
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "artifacts:artifact"
+          "type": "minecraft:item",
+          "name": "artifacts:flame_pendant"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "artifacts:entity_equipment/skeleton"

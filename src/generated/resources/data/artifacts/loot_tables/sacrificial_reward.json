@@ -1,40 +1,47 @@
 {
-  "type": "minecraft:generic",
   "pools": [
     {
-      "name": "main",
-      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nether_star",
-          "weight": 1
+          "name": "minecraft:nether_star"
         },
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "minecraft:diamond",
-          "weight": 29,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": { "type": "minecraft:uniform", "min": 3.0, "max": 8.0 },
-              "add": false
-            }
-          ]
+          "weight": 29
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:experience_bottle",
-          "weight": 20,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": { "type": "minecraft:uniform", "min": 2.0, "max": 6.0 },
-              "add": false
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
             }
-          ]
+          ],
+          "name": "minecraft:experience_bottle",
+          "weight": 20
         }
-      ]
+      ],
+      "name": "main",
+      "rolls": 1.0
     }
   ],
   "random_sequence": "artifacts:sacrificial_reward"

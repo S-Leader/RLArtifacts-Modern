@@ -10,7 +10,9 @@ import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.entity.LivingEntity;
 
-/** Port of RLArtifacts 1.12's ModelAmulet geometry. */
+/**
+ * Port of RLArtifacts 1.12's ModelAmulet geometry.
+ */
 public class LegacyAmuletModel extends HumanoidModel<LivingEntity> {
 
     public LegacyAmuletModel(ModelPart root) {

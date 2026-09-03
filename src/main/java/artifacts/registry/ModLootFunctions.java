@@ -2,11 +2,11 @@ package artifacts.registry;
 
 import artifacts.Artifacts;
 import artifacts.loot.ReplaceWithLootTableFunction;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.storage.loot.Serializer;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunction;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
+import net.minecraftforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 

@@ -4,7 +4,8 @@ import artifacts.item.wearable.WearableArtifactItem;
 import net.minecraft.client.KeyMapping;
 
 public final class ToggleKeyHandler {
-    private ToggleKeyHandler() {}
+    private ToggleKeyHandler() {
+    }
 
     public static void register() {
     }

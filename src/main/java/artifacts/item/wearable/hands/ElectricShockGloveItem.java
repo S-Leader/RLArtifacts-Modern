@@ -9,7 +9,9 @@ import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 
-/** Vampiric glove variant that sprays lingering, gravity-affected sparks. */
+/**
+ * Vampiric glove variant that sprays lingering, gravity-affected sparks.
+ */
 public class ElectricShockGloveItem extends VampiricGloveItem {
 
     public static void spawnSparks(LivingEntity attacker) {

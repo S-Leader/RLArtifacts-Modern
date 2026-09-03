@@ -7,7 +7,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 
-/** Applies the two scale operations used by RLArtifacts 1.12's ModelBubbleWrap. */
+/**
+ * Applies the two scale operations used by RLArtifacts 1.12's ModelBubbleWrap.
+ */
 public class BubbleWrapArtifactRenderer extends GenericArtifactRenderer {
 
     public BubbleWrapArtifactRenderer(BubbleWrapModel model) {

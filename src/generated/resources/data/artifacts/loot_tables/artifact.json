@@ -1,9 +1,6 @@
 {
-  "type": "minecraft:generic",
   "pools": [
     {
-      "name": "main",
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -24,11 +21,6 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:feral_claws",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:item",
-          "name": "artifacts:fire_gauntlet",
           "weight": 8
         },
         {
@@ -59,6 +51,11 @@
         {
           "type": "minecraft:item",
           "name": "artifacts:power_glove",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "artifacts:sacrificial_amulet",
           "weight": 8
         },
         {
@@ -96,7 +93,9 @@
           "name": "artifacts:whoopee_cushion",
           "weight": 5
         }
-      ]
+      ],
+      "name": "main",
+      "rolls": 1.0
     }
   ],
   "random_sequence": "artifacts:artifact"

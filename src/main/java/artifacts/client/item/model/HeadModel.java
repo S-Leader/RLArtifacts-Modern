@@ -140,7 +140,7 @@ public class HeadModel extends HumanoidModel<LivingEntity> {
         MeshDefinition mesh = createHat(head);
 
         mesh.getRoot().getChild("head").addOrReplaceChild("left_brim", leftBrim,
-                PartPose.offsetAndRotation(6, -5.125F, -8, 0, 0, - 45 * (float) Math.PI / 180)
+                PartPose.offsetAndRotation(6, -5.125F, -8, 0, 0, -45 * (float) Math.PI / 180)
         );
         mesh.getRoot().getChild("head").addOrReplaceChild("right_brim", rightBrim,
                 PartPose.offsetAndRotation(-6 - 1.41421F, -5.125F - 1.41421F, -8, 0, 0, 45 * (float) Math.PI / 180)

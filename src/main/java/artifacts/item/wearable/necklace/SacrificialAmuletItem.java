@@ -20,7 +20,9 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 import java.util.List;
 
-/** The RLArtifacts 1.12 sacrificial amulet: 99 kills consume it and roll its reward table. */
+/**
+ * The RLArtifacts 1.12 sacrificial amulet: 99 kills consume it and roll its reward table.
+ */
 public class SacrificialAmuletItem extends WearableArtifactItem {
 
     public static final String CHARGE_TAG = "Sacrificial Amulet Charge";

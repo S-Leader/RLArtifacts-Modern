@@ -33,7 +33,7 @@ public class VampiricGloveItem extends WearableArtifactItem {
         LivingEntity attacker = DamageSourceHelper.getAttacker(damageSource);
         if (attacker != null
                 && (ModItems.VAMPIRIC_GLOVE.get().isEquippedBy(attacker)
-                    || ModItems.ELECTRIC_SHOCK_GLOVE.get().isEquippedBy(attacker))
+                || ModItems.ELECTRIC_SHOCK_GLOVE.get().isEquippedBy(attacker))
                 && DamageSourceHelper.isMeleeAttack(damageSource)
         ) {
             int maxHealthAbsorbed = ModGameRules.VAMPIRIC_GLOVE_MAX_HEALING_PER_HIT.get();

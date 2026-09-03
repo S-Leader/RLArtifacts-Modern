@@ -31,7 +31,7 @@ public class CeilingHeightFilter extends PlacementFilter {
         if (maxHeight == 0) {
             return true;
         }
-        for (int i = 1; i <= maxHeight; i ++) {
+        for (int i = 1; i <= maxHeight; i++) {
             if (!context.getBlockState(pos.above(i)).isAir()) {
                 return true;
             }

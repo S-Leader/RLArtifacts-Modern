@@ -2,9 +2,6 @@ package artifacts.data.providers;
 
 import artifacts.Artifacts;
 import artifacts.loot.RollLootTableModifier;
-import artifacts.loot.ArtifactRarityAdjustedChance;
-import artifacts.loot.ConfigValueChance;
-import artifacts.registry.ModLootTables;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -23,7 +20,6 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
-import net.minecraftforge.common.loot.LootTableIdCondition;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -45,46 +41,8 @@ public class LootModifiers implements DataProvider {
         this.packOutput = packOutput;
     }
 
-    private void addLoot() {
-        ModLootTables.INJECTED_LOOT_TABLES.stream()
-                .forEach(lootTable -> builder(lootTable, 0.15F).artifact(1));
-
-        ModLootTables.ARCHAEOLOGY_LOOT_TABLES.forEach(lootTable -> archaeologyBuilder(lootTable).artifact(1));
-    }
-
-    protected Builder builder(ResourceLocation lootTable, float baseChance) {
-        if (!ModLootTables.INJECTED_LOOT_TABLES.contains(lootTable)) {
-            throw new IllegalArgumentException("Missing injected loot table: %s".formatted(lootTable));
-        }
-        Builder builder = new Builder(lootTable);
-        builder.lootPoolCondition(ArtifactRarityAdjustedChance.adjustedChance(baseChance));
-        builder.lootModifierCondition(LootTableIdCondition.builder(lootTable));
-        lootBuilders.add(builder);
-        return builder;
-    }
-
-    protected Builder archaeologyBuilder(ResourceLocation lootTable) {
-        if (!ModLootTables.ARCHAEOLOGY_LOOT_TABLES.contains(lootTable)) {
-            throw new IllegalArgumentException("Missing archaeology loot table: %s".formatted(lootTable));
-        }
-        Builder builder = new Builder(lootTable).replace();
-        builder.lootModifierCondition(LootTableIdCondition.builder(lootTable));
-        builder.lootModifierCondition(ConfigValueChance.archaeologyChance());
-        lootBuilders.add(builder);
-        return builder;
-    }
-
-    protected void start() {
-        addLoot();
-        for (Builder lootBuilder : lootBuilders) {
-            add("inject/" + lootBuilder.getName(), lootBuilder.build());
-        }
-    }
-
     @Override
     public CompletableFuture<?> run(CachedOutput cache) {
-        start();
-
         Path modifierFolderPath = packOutput.getOutputFolder(PackOutput.Target.DATA_PACK).resolve(Artifacts.MOD_ID).resolve("loot_modifiers");
         List<ResourceLocation> entries = new ArrayList<>();
         ImmutableList.Builder<CompletableFuture<?>> futuresBuilder = new ImmutableList.Builder<>();
@@ -102,7 +60,8 @@ public class LootModifiers implements DataProvider {
     }
 
     public <T extends IGlobalLootModifier> void add(String modifier, T instance) {
-        JsonElement json = IGlobalLootModifier.DIRECT_CODEC.encodeStart(JsonOps.INSTANCE, instance).getOrThrow(false, ignored -> {});
+        JsonElement json = IGlobalLootModifier.DIRECT_CODEC.encodeStart(JsonOps.INSTANCE, instance).getOrThrow(false, ignored -> {
+        });
         toSerialize.put(modifier, json);
     }
 

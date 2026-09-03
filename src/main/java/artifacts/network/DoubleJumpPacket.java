@@ -11,9 +11,15 @@ import net.minecraftforge.network.NetworkEvent;
 import java.util.function.Supplier;
 
 public class DoubleJumpPacket {
-    public DoubleJumpPacket(FriendlyByteBuf buffer) {}
-    public DoubleJumpPacket() {}
-    void encode(FriendlyByteBuf buffer) {}
+    public DoubleJumpPacket(FriendlyByteBuf buffer) {
+    }
+
+    public DoubleJumpPacket() {
+    }
+
+    void encode(FriendlyByteBuf buffer) {
+    }
+
     void apply(Supplier<NetworkEvent.Context> context) {
         ServerPlayer player = context.get().getSender();
         if (player != null && ModGameRules.CLOUD_IN_A_BOTTLE_ENABLED.get()) {

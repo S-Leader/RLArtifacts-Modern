@@ -10,7 +10,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public final class ClientNetworkHandler {
-    private ClientNetworkHandler() {}
+    private ClientNetworkHandler() {
+    }
+
     public static void playSound(SoundEvent soundEvent, float volume, float pitch, long seed) {
         Player player = Minecraft.getInstance().player;
         if (player != null) {
