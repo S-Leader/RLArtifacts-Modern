@@ -21,6 +21,10 @@ public class CloudInABottleItem extends WearableArtifactItem {
     }
 
     public static void jump(Player player) {
+        jump(player, false);
+    }
+
+    public static void jump(Player player, boolean fart) {
         player.fallDistance = 0;
 
         double upwardsMotion = 0.5;
@@ -50,7 +54,7 @@ public class CloudInABottleItem extends WearableArtifactItem {
             player.causeFoodExhaustion(0.05F);
         }
 
-        if (ModItems.WHOOPEE_CUSHION.get().isEquippedBy(player)) {
+        if (fart || ModItems.WHOOPEE_CUSHION.get().isEquippedBy(player)) {
             player.playSound(ModSoundEvents.FART.get(), 1, 0.9F + player.getRandom().nextFloat() * 0.2F);
         } else {
             player.playSound(SoundEvents.WOOL_FALL, 1, 0.9F + player.getRandom().nextFloat() * 0.2F);
@@ -63,7 +67,8 @@ public class CloudInABottleItem extends WearableArtifactItem {
     }
 
     public static float getReducedFallDistance(LivingEntity entity, float distance) {
-        if (ModGameRules.CLOUD_IN_A_BOTTLE_ENABLED.get() && ModItems.CLOUD_IN_A_BOTTLE.get().isEquippedBy(entity)) {
+        if (ModGameRules.CLOUD_IN_A_BOTTLE_ENABLED.get()
+                && (ModItems.CLOUD_IN_A_BOTTLE.get().isEquippedBy(entity) || ModItems.BOTTLED_FART.get().isEquippedBy(entity))) {
             return Math.max(0, distance - 3);
         }
         return distance;

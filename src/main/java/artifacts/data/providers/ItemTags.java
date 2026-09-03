@@ -54,6 +54,7 @@ public class ItemTags extends ItemTagsProvider {
                 ModItems.SHOCK_PENDANT.get(),
                 ModItems.FLAME_PENDANT.get(),
                 ModItems.THORN_PENDANT.get(),
+                ModItems.ULTIMATE_PENDANT.get(),
                 ModItems.SACRIFICIAL_AMULET.get()
         );
         tag(HANDS).add(
@@ -67,6 +68,7 @@ public class ItemTags extends ItemTagsProvider {
         );
         tag(BELT).add(
                 ModItems.CLOUD_IN_A_BOTTLE.get(),
+                ModItems.BOTTLED_FART.get(),
                 ModItems.ANTIDOTE_VESSEL.get(),
                 ModItems.BUBBLE_WRAP.get(),
                 ModItems.WHOOPEE_CUSHION.get()

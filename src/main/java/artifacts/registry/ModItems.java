@@ -7,6 +7,7 @@ import artifacts.item.wearable.WearableArtifactItem;
 import artifacts.item.wearable.WhoopeeCushionItem;
 import artifacts.item.wearable.belt.AntidoteVesselItem;
 import artifacts.item.wearable.belt.BubbleWrapItem;
+import artifacts.item.wearable.belt.BottledFartItem;
 import artifacts.item.wearable.belt.CloudInABottleItem;
 import artifacts.item.wearable.body.StarCloakItem;
 import artifacts.item.wearable.hands.*;
@@ -50,10 +51,12 @@ public class ModItems {
     public static final RegistrySupplier<WearableArtifactItem> SHOCK_PENDANT = register("shock_pendant", ShockPendantItem::new);
     public static final RegistrySupplier<WearableArtifactItem> FLAME_PENDANT = register("flame_pendant", FlamePendantItem::new);
     public static final RegistrySupplier<WearableArtifactItem> THORN_PENDANT = register("thorn_pendant", ThornPendantItem::new);
+    public static final RegistrySupplier<WearableArtifactItem> ULTIMATE_PENDANT = register("ultimate_pendant", UltimatePendantItem::new);
     public static final RegistrySupplier<WearableArtifactItem> SACRIFICIAL_AMULET = register("sacrificial_amulet", SacrificialAmuletItem::new);
 
     // belt
     public static final RegistrySupplier<WearableArtifactItem> CLOUD_IN_A_BOTTLE = register("cloud_in_a_bottle", CloudInABottleItem::new);
+    public static final RegistrySupplier<WearableArtifactItem> BOTTLED_FART = register("bottled_fart", BottledFartItem::new);
     public static final RegistrySupplier<WearableArtifactItem> ANTIDOTE_VESSEL = register("antidote_vessel", AntidoteVesselItem::new);
     public static final RegistrySupplier<WearableArtifactItem> BUBBLE_WRAP = register("bubble_wrap", BubbleWrapItem::new);
     public static final RegistrySupplier<WearableArtifactItem> WHOOPEE_CUSHION = register("whoopee_cushion", WhoopeeCushionItem::new);

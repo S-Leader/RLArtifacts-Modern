@@ -15,6 +15,7 @@ public class ArtifactLayers {
             DRINKING_HAT = createLayerLocation("drinking_hat"),
             PANIC_NECKLACE = createLayerLocation("panic_necklace"),
             PENDANT = createLayerLocation("pendant"),
+            ULTIMATE_PENDANT = createLayerLocation("ultimate_pendant"),
             LEGACY_AMULET = createLayerLocation("legacy_amulet"),
 
     CLOUD_IN_A_BOTTLE = createLayerLocation("cloud_in_a_bottle"),
@@ -62,6 +63,7 @@ public class ArtifactLayers {
 
         event.registerLayerDefinition(PANIC_NECKLACE, layer(NecklaceModel::createPanicNecklace, 64, 48));
         event.registerLayerDefinition(PENDANT, layer(NecklaceModel::createPendant, 64, 48));
+        event.registerLayerDefinition(ULTIMATE_PENDANT, layer(NecklaceModel::createUltimatePendant, 64, 32));
         event.registerLayerDefinition(LEGACY_AMULET, layer(LegacyAmuletModel::createAmulet, 32, 16));
 
         event.registerLayerDefinition(CLOUD_IN_A_BOTTLE, layer(BeltModel::createCloudInABottle, 32, 32));

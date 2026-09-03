@@ -36,9 +36,10 @@ public class CloudInABottleInputHandler {
             hasReleasedJumpKey = true;
         } else if (!player.getAbilities().flying && canDoubleJump && hasReleasedJumpKey) {
             canDoubleJump = false;
-            if (ModItems.CLOUD_IN_A_BOTTLE.get().isEquippedBy(player) && ModGameRules.CLOUD_IN_A_BOTTLE_ENABLED.get()) {
-                NetworkHandler.CHANNEL.sendToServer(new DoubleJumpPacket());
-                CloudInABottleItem.jump(player);
+            boolean fart = ModItems.BOTTLED_FART.get().isEquippedBy(player);
+            if ((fart || ModItems.CLOUD_IN_A_BOTTLE.get().isEquippedBy(player)) && ModGameRules.CLOUD_IN_A_BOTTLE_ENABLED.get()) {
+                NetworkHandler.CHANNEL.sendToServer(new DoubleJumpPacket(fart));
+                CloudInABottleItem.jump(player, fart);
             }
         }
     }

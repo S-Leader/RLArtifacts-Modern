@@ -1,6 +1,7 @@
 package artifacts.item.wearable.necklace;
 
 import artifacts.item.wearable.WearableArtifactItem;
+import artifacts.registry.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
@@ -29,10 +30,14 @@ public abstract class PendantItem extends WearableArtifactItem {
     }
 
     protected void onLivingHurt(LivingEntity entity, Entity attacker) {
-        if (isEquippedBy(entity) && !entity.level().isClientSide() && attacker != null && !isOnCooldown(entity) && entity.getRandom().nextDouble() < getStrikeChance() && attacker instanceof LivingEntity livingEntity) {
+        if (isPendantOrUltimateEquippedBy(entity) && !entity.level().isClientSide() && attacker != null && !isOnCooldown(entity) && entity.getRandom().nextDouble() < getStrikeChance() && attacker instanceof LivingEntity livingEntity) {
             applyEffect(entity, livingEntity);
             addCooldown(entity, cooldown.get());
         }
+    }
+
+    protected boolean isPendantOrUltimateEquippedBy(LivingEntity entity) {
+        return isEquippedBy(entity) || ModItems.ULTIMATE_PENDANT.get().isEquippedBy(entity);
     }
 
     protected abstract void applyEffect(LivingEntity target, LivingEntity attacker);

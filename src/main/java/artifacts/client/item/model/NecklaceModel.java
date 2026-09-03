@@ -121,4 +121,14 @@ public class NecklaceModel extends HumanoidModel<LivingEntity> {
 
         return createNecklace(body);
     }
+
+    public static MeshDefinition createUltimatePendant() {
+        CubeListBuilder body = CubeListBuilder.create();
+
+        // Original 1.12 model: a larger 3x3 retribution gem.
+        body.texOffs(50, 0);
+        body.addBox(-1.5F, 4.0F, -5, 3, 3, 1);
+
+        return createCenteredNecklace(body);
+    }
 }

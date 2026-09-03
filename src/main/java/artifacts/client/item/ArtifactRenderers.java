@@ -22,10 +22,12 @@ public class ArtifactRenderers {
         register(ModItems.SHOCK_PENDANT.get(), () -> new GenericArtifactRenderer("shock_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
         register(ModItems.FLAME_PENDANT.get(), () -> new GenericArtifactRenderer("flame_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
         register(ModItems.THORN_PENDANT.get(), () -> new GenericArtifactRenderer("thorn_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
+        register(ModItems.ULTIMATE_PENDANT.get(), () -> new GenericArtifactRenderer("ultimate_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.ULTIMATE_PENDANT))));
         register(ModItems.SACRIFICIAL_AMULET.get(), () -> new LegacyAmuletArtifactRenderer("sacrificial_amulet", new LegacyAmuletModel(bakeLayer(ArtifactLayers.LEGACY_AMULET))));
 
         // belt
         register(ModItems.CLOUD_IN_A_BOTTLE.get(), () -> new BeltArtifactRenderer("cloud_in_a_bottle", BeltModel.createCloudInABottleModel()));
+        register(ModItems.BOTTLED_FART.get(), () -> new BeltArtifactRenderer("bottled_fart", BeltModel.createCloudInABottleModel()));
         register(ModItems.ANTIDOTE_VESSEL.get(), () -> new BeltArtifactRenderer("antidote_vessel", BeltModel.createAntidoteVesselModel()));
         register(ModItems.BUBBLE_WRAP.get(), () -> new BubbleWrapArtifactRenderer(new BubbleWrapModel(bakeLayer(ArtifactLayers.BUBBLE_WRAP))));
         register(ModItems.WHOOPEE_CUSHION.get(), () -> new GenericArtifactRenderer("whoopee_cushion", new HeadModel(bakeLayer(ArtifactLayers.WHOOPEE_CUSHION))));

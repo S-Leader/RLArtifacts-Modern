@@ -77,7 +77,9 @@ public class LootTables extends LootTableProvider {
                 ModItems.UMBRELLA.get(),
                 ModItems.MECHANICAL_GLOVE.get(),
                 ModItems.FIRE_GAUNTLET.get(),
-                ModItems.ELECTRIC_SHOCK_GLOVE.get()
+                ModItems.ELECTRIC_SHOCK_GLOVE.get(),
+                ModItems.ULTIMATE_PENDANT.get(),
+                ModItems.BOTTLED_FART.get()
         ));
 
         LootPool.Builder builder = LootPool.lootPool().name("main").setRolls(ConstantValue.exactly(1));

@@ -268,6 +268,10 @@
   "item.artifacts.mechanical_glove": "Mechanical Glove",
   "item.artifacts.electric_shock_glove": "Electric Shock Glove",
   "item.artifacts.sacrificial_amulet": "Sacrificial Amulet",
+  "item.artifacts.ultimate_pendant": "Pendant of Ultimate Retribution",
+  "item.artifacts.bottled_fart": "Fart in a Jar",
+  "artifacts.tooltip.item.ultimate_pendant.description": "Has a chance to damage attackers, light them on fire, and strike them with lightning",
+  "artifacts.tooltip.item.bottled_fart": "Allows the wearer to double jump",
   "entity.artifacts.hallow_star": "Hallow Star",
   "entity.artifacts.electric_spark": "Electric Spark",
   "text.autoconfig.artifacts.title": "Artifacts Config"

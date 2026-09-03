@@ -39,7 +39,7 @@ public class ShockPendantItem extends PendantItem {
 
     protected void onLivingHurts(LivingHurtEvent event) {
         LivingEntity entity = event.getEntity();
-        if (isEquippedBy(entity) && !entity.level().isClientSide() && ModGameRules.SHOCK_PENDANT_DO_CANCEL_LIGHTNING_DAMAGE.get() && event.getAmount() > 0 && event.getSource().is(DamageTypeTags.IS_LIGHTNING)) {
+        if (isPendantOrUltimateEquippedBy(entity) && !entity.level().isClientSide() && ModGameRules.SHOCK_PENDANT_DO_CANCEL_LIGHTNING_DAMAGE.get() && event.getAmount() > 0 && event.getSource().is(DamageTypeTags.IS_LIGHTNING)) {
             event.setCanceled(true);
         }
     }

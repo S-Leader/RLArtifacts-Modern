@@ -268,6 +268,10 @@
   "item.artifacts.mechanical_glove": "机械手套",
   "item.artifacts.electric_shock_glove": "电击手套",
   "item.artifacts.sacrificial_amulet": "献祭吊坠",
+  "item.artifacts.ultimate_pendant": "终极惩戒吊坠",
+  "item.artifacts.bottled_fart": "瓶中屁",
+  "artifacts.tooltip.item.ultimate_pendant.description": "受到攻击时有几率反伤、点燃攻击者并召唤闪电",
+  "artifacts.tooltip.item.bottled_fart": "允许佩戴者进行二段跳",
   "entity.artifacts.hallow_star": "神圣星体",
   "entity.artifacts.electric_spark": "电火花",
   "text.autoconfig.artifacts.title": "奇异饰品配置文件"
