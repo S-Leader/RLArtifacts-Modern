@@ -18,11 +18,11 @@ public class ArtifactRenderers {
         register(ModItems.PLASTIC_DRINKING_HAT.get(), () -> new GenericArtifactRenderer("plastic_drinking_hat", new HeadModel(bakeLayer(ArtifactLayers.DRINKING_HAT))));
 
         // necklace
-        register(ModItems.PANIC_NECKLACE.get(), () -> new LegacyAmuletArtifactRenderer("panic_necklace", new LegacyAmuletModel(bakeLayer(ArtifactLayers.PANIC_NECKLACE))));
-        register(ModItems.SHOCK_PENDANT.get(), () -> new LegacyAmuletArtifactRenderer("shock_pendant", new LegacyAmuletModel(bakeLayer(ArtifactLayers.PENDANT))));
-        register(ModItems.FLAME_PENDANT.get(), () -> new LegacyAmuletArtifactRenderer("flame_pendant", new LegacyAmuletModel(bakeLayer(ArtifactLayers.PENDANT))));
-        register(ModItems.THORN_PENDANT.get(), () -> new LegacyAmuletArtifactRenderer("thorn_pendant", new LegacyAmuletModel(bakeLayer(ArtifactLayers.PENDANT))));
-        register(ModItems.ULTIMATE_PENDANT.get(), () -> new LegacyAmuletArtifactRenderer("ultimate_pendant", new LegacyAmuletModel(bakeLayer(ArtifactLayers.ULTIMATE_PENDANT))));
+        register(ModItems.PANIC_NECKLACE.get(), () -> new GenericArtifactRenderer("panic_necklace", new NecklaceModel(bakeLayer(ArtifactLayers.PANIC_NECKLACE))));
+        register(ModItems.SHOCK_PENDANT.get(), () -> new GenericArtifactRenderer("shock_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
+        register(ModItems.FLAME_PENDANT.get(), () -> new GenericArtifactRenderer("flame_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
+        register(ModItems.THORN_PENDANT.get(), () -> new GenericArtifactRenderer("thorn_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.PENDANT))));
+        register(ModItems.ULTIMATE_PENDANT.get(), () -> new GenericArtifactRenderer("ultimate_pendant", new NecklaceModel(bakeLayer(ArtifactLayers.ULTIMATE_PENDANT))));
         register(ModItems.SACRIFICIAL_AMULET.get(), () -> new LegacyAmuletArtifactRenderer("sacrificial_amulet", new LegacyAmuletModel(bakeLayer(ArtifactLayers.LEGACY_AMULET))));
 
         // belt
