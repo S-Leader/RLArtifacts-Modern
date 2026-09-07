@@ -60,7 +60,6 @@ public class Artifacts {
             new ArtifactsClient(modBus);
         }
 
-        ModLootModifiers.LOOT_MODIFIERS.register(modBus);
         modBus.addListener(this::onEntityAttributes);
 
         MinecraftForge.EVENT_BUS.addGenericListener(ItemStack.class, this::onAttachCapabilities);

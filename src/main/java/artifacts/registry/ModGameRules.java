@@ -41,8 +41,8 @@ public class ModGameRules {
             STAR_CLOAK_MIN_STARS = integerValue(createName(ModItems.STAR_CLOAK, "minimumStars"), 2, 64),
             STAR_CLOAK_MAX_STARS = integerValue(createName(ModItems.STAR_CLOAK, "maximumStars"), 6, 64),
             STAR_CLOAK_DAMAGE = integerValue(createName(ModItems.STAR_CLOAK, "starDamage"), 8, 100),
-
-    ANTIDOTE_VESSEL_MAX_EFFECT_DURATION = durationSeconds(createName(ModItems.ANTIDOTE_VESSEL, "maxEffectDuration"), 5),
+            ANTIDOTE_VESSEL_MAX_EFFECT_AMPLIFIER = integerValue(createName(ModItems.ANTIDOTE_VESSEL, "maxEffectAmplifier"), 1, 255),
+            ANTIDOTE_VESSEL_MAX_EFFECT_DURATION = durationSeconds(createName(ModItems.ANTIDOTE_VESSEL, "maxEffectDuration"), 5),
             FIRE_GAUNTLET_FIRE_DURATION = durationSeconds(createName(ModItems.FIRE_GAUNTLET, "fireDuration"), 8),
             FLAME_PENDANT_COOLDOWN = durationSeconds(createName(ModItems.FLAME_PENDANT, "cooldown"), 0),
             FLAME_PENDANT_FIRE_DURATION = durationSeconds(createName(ModItems.FLAME_PENDANT, "fireDuration"), 10),

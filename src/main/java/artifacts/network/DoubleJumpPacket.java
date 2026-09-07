@@ -3,15 +3,22 @@ package artifacts.network;
 import artifacts.item.wearable.belt.CloudInABottleItem;
 import artifacts.registry.ModGameRules;
 import artifacts.registry.ModItems;
+import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkEvent;
+import org.joml.Vector3f;
 
 import java.util.function.Supplier;
 
 public class DoubleJumpPacket {
+    private static final ParticleOptions FART_PARTICLE = new DustParticleOptions(
+            new Vector3f(194F / 255F, 209F / 255F, 131F / 255F),
+            1.0F
+    );
+
     private final boolean fart;
 
     public DoubleJumpPacket(FriendlyByteBuf buffer) {
@@ -45,7 +52,9 @@ public class DoubleJumpPacket {
                     double motionX = player.getRandom().nextGaussian() * 0.02;
                     double motionY = player.getRandom().nextGaussian() * 0.02 + 0.20;
                     double motionZ = player.getRandom().nextGaussian() * 0.02;
-                    ParticleOptions particleType = player.isInWater() ? ParticleTypes.BUBBLE : ParticleTypes.POOF;
+                    ParticleOptions particleType = player.isInWater()
+                            ? ParticleTypes.BUBBLE
+                            : fart ? FART_PARTICLE : ParticleTypes.POOF;
                     player.serverLevel().sendParticles(particleType, player.getX(), player.getY(), player.getZ(), 1, motionX, motionY, motionZ, 0.15);
                 }
             });

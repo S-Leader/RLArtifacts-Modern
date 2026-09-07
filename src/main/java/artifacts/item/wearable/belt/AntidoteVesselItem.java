@@ -33,8 +33,10 @@ public class AntidoteVesselItem extends WearableArtifactItem {
         Map<MobEffect, MobEffectInstance> effects = new HashMap<>();
 
         int maxEffectDuration = ModGameRules.ANTIDOTE_VESSEL_MAX_EFFECT_DURATION.get();
+        int maxEffectAmplifier = ModGameRules.ANTIDOTE_VESSEL_MAX_EFFECT_AMPLIFIER.get();
         entity.getActiveEffectsMap().forEach((effect, instance) -> {
-            if (ModTags.isInTag(effect, ModTags.ANTIDOTE_VESSEL_CANCELLABLE) && instance.getDuration() > maxEffectDuration) {
+            if (ModTags.isInTag(effect, ModTags.ANTIDOTE_VESSEL_CANCELLABLE)
+                    && (instance.getDuration() > maxEffectDuration || instance.getAmplifier() > maxEffectAmplifier)) {
                 effects.put(effect, instance);
             }
         });
@@ -42,7 +44,14 @@ public class AntidoteVesselItem extends WearableArtifactItem {
         effects.forEach((effect, instance) -> {
             entity.removeEffectNoUpdate(effect);
             if (maxEffectDuration > 0) {
-                entity.addEffect(new MobEffectInstance(effect, maxEffectDuration, instance.getAmplifier(), instance.isAmbient(), instance.isVisible(), instance.showIcon()));
+                entity.addEffect(new MobEffectInstance(
+                        effect,
+                        Math.min(instance.getDuration(), maxEffectDuration),
+                        Math.min(instance.getAmplifier(), maxEffectAmplifier),
+                        instance.isAmbient(),
+                        instance.isVisible(),
+                        instance.showIcon()
+                ));
             }
         });
     }

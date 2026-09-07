@@ -2,7 +2,6 @@ package artifacts.data.providers;
 
 import artifacts.Artifacts;
 import artifacts.entity.MimicEntity;
-import artifacts.loot.ArtifactRarityAdjustedChance;
 import artifacts.registry.ModItems;
 import artifacts.registry.ModLootTables;
 import artifacts.world.CampsiteFeature;
@@ -308,10 +307,6 @@ public class LootTables extends LootTableProvider {
                         .add(item(Items.BOOK, 8).apply(EnchantWithLevelsFunction.enchantWithLevels(UniformGenerator.between(15, 30)).allowTreasure()))
                         .add(item(Items.GOLDEN_APPLE, 4))
                         .add(item(Items.ENCHANTED_GOLDEN_APPLE, 1))
-                ).withPool(new LootPool.Builder()
-                        .name("artifact")
-                        .when(ArtifactRarityAdjustedChance.adjustedChance(0.15F))
-                        .add(artifact(1))
                 )
         );
     }
