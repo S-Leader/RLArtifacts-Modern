@@ -47,7 +47,10 @@ public class ArtifactRenderers {
         ));
 
         // body
-        register(ModItems.STAR_CLOAK.get(), () -> new GlowingArtifactRenderer("star_cloak", new StarCloakModel(bakeLayer(ArtifactLayers.STAR_CLOAK))));
+        register(ModItems.STAR_CLOAK.get(), () -> new StarCloakArtifactRenderer(
+                new StarCloakModel(bakeLayer(ArtifactLayers.STAR_CLOAK)),
+                new StarCloakModel(bakeLayer(ArtifactLayers.STAR_CLOAK))
+        ));
     }
 
     public static ModelPart bakeLayer(ModelLayerLocation layerLocation) {

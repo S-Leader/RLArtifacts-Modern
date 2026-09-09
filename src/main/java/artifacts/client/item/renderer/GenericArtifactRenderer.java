@@ -58,11 +58,10 @@ public class GenericArtifactRenderer implements ArtifactRenderer {
 
         if (entity instanceof Ghast) {
             model.head.yRot = model.body.yRot;
-            // A ghast's body is a 16x16x16 cube spanning Y 9.6..25.6 in model
-            // space. The cloak hood is 10x10x10 and spans Y -9.5..0.5, so
-            // translating first and scaling by 16 / 10 makes it fit exactly.
-            poseStack.translate(0.0F, 24.8F / 16.0F, 0.0F);
-            poseStack.scale(1.6F, 1.6F, 1.6F);
+            // Keep the hood centred on the ghast's 16x16x16 body, but render it
+            // slightly oversized so the cloak does not sit flush with the head.
+            poseStack.translate(0.0F, 25.7F / 16.0F, 0.0F);
+            poseStack.scale(1.8F, 1.8F, 1.8F);
         }
 
         render(poseStack, multiBufferSource, light, stack.hasFoil() && !(entity instanceof Ghast));
