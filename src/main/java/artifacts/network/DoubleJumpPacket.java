@@ -48,14 +48,31 @@ public class DoubleJumpPacket {
                     return;
                 }
                 CloudInABottleItem.jump(player, fart);
-                for (int i = 0; i < 20; ++i) {
-                    double motionX = player.getRandom().nextGaussian() * 0.02;
-                    double motionY = player.getRandom().nextGaussian() * 0.02 + 0.20;
-                    double motionZ = player.getRandom().nextGaussian() * 0.02;
-                    ParticleOptions particleType = player.isInWater()
-                            ? ParticleTypes.BUBBLE
-                            : fart ? FART_PARTICLE : ParticleTypes.POOF;
-                    player.serverLevel().sendParticles(particleType, player.getX(), player.getY(), player.getZ(), 1, motionX, motionY, motionZ, 0.15);
+                ParticleOptions particleType = player.isInWater()
+                        ? ParticleTypes.BUBBLE
+                        : fart ? FART_PARTICLE : ParticleTypes.POOF;
+
+                // Match the original 1.12.2 nine-particle footprint: the four
+                // corners are pulled inward while the centre and cardinal
+                // points remain on the one-block grid. Particles have no
+                // random spread or upward velocity.
+                for (int x = -1; x <= 1; ++x) {
+                    for (int z = -1; z <= 1; ++z) {
+                        boolean corner = x != 0 && z != 0;
+                        double offsetX = corner ? x / 1.5D : x;
+                        double offsetZ = corner ? z / 1.5D : z;
+                        player.serverLevel().sendParticles(
+                                particleType,
+                                player.getX() + offsetX,
+                                player.getY(),
+                                player.getZ() + offsetZ,
+                                1,
+                                0.0D,
+                                0.0D,
+                                0.0D,
+                                0.0D
+                        );
+                    }
                 }
             });
         }

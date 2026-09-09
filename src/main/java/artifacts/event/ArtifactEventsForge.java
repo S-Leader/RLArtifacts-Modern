@@ -1,13 +1,11 @@
 package artifacts.event;
 
+import artifacts.integration.TalentsCompat;
 import artifacts.item.UmbrellaItem;
 import artifacts.item.wearable.belt.CloudInABottleItem;
-import artifacts.item.wearable.hands.ElectricShockGloveItem;
 import artifacts.item.wearable.hands.VampiricGloveItem;
 import artifacts.item.wearable.head.DrinkingHatItem;
 import artifacts.registry.ModGameRules;
-import artifacts.registry.ModItems;
-import artifacts.util.DamageSourceHelper;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -41,13 +39,6 @@ public class ArtifactEventsForge {
 
     private static void onLivingDamage(LivingDamageEvent event) {
         VampiricGloveItem.onLivingDamage(event.getEntity(), event.getSource(), event.getAmount());
-        LivingEntity attacker = DamageSourceHelper.getAttacker(event.getSource());
-        if (attacker != null
-                && event.getAmount() > 0
-                && DamageSourceHelper.isMeleeAttack(event.getSource())
-                && ModItems.ELECTRIC_SHOCK_GLOVE.get().isEquippedBy(attacker)) {
-            ElectricShockGloveItem.spawnSparks(attacker);
-        }
     }
 
     private static void onLivingFall(LivingFallEvent event) {
@@ -67,7 +58,8 @@ public class ArtifactEventsForge {
                 && !isInWater
                 && entity.getDeltaMovement().y < 0
                 && !entity.hasEffect(MobEffects.SLOW_FALLING)
-                && UmbrellaItem.isHoldingUmbrellaUpright(entity)) {
+                && UmbrellaItem.isHoldingUmbrellaUpright(entity)
+                && TalentsCompat.canUseUmbrella(entity)) {
             if (!gravity.hasModifier(UMBRELLA_SLOW_FALLING)) {
                 gravity.addTransientModifier(UMBRELLA_SLOW_FALLING);
             }

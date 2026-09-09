@@ -31,10 +31,15 @@ public class ModGameRules {
             UMBRELLA_IS_GLIDER = booleanValue(createName(ModItems.UMBRELLA, "isGlider"));
 
     public static final IntegerValue
+            ELECTRIC_SHOCK_GLOVE_COOLDOWN = durationSeconds(createName(ModItems.ELECTRIC_SHOCK_GLOVE, "cooldown"), 1),
+            ELECTRIC_SHOCK_GLOVE_MIN_SPARKS = integerValue(createName(ModItems.ELECTRIC_SHOCK_GLOVE, "minimumSparks"), 0, 64),
+            ELECTRIC_SHOCK_GLOVE_MAX_SPARKS = integerValue(createName(ModItems.ELECTRIC_SHOCK_GLOVE, "maximumSparks"), 5, 64),
+            ELECTRIC_SHOCK_GLOVE_DAMAGE_PER_SPARK = integerValue(createName(ModItems.ELECTRIC_SHOCK_GLOVE, "damagePerSpark"), 3, 1000),
             POWER_GLOVE_ATTACK_DAMAGE_BONUS = integerValue(createName(ModItems.POWER_GLOVE, "attackDamageBonus"), 4),
             SACRIFICIAL_AMULET_REQUIRED_KILLS = integerValue(createName(ModItems.SACRIFICIAL_AMULET, "requiredKills"), 99, 10000),
             THORN_PENDANT_MAX_DAMAGE = integerValue(createName(ModItems.THORN_PENDANT, "maxDamage"), 6),
             THORN_PENDANT_MIN_DAMAGE = integerValue(createName(ModItems.THORN_PENDANT, "minDamage"), 2),
+            VAMPIRIC_GLOVE_COOLDOWN = durationSeconds(createName(ModItems.VAMPIRIC_GLOVE, "cooldown"), 1),
             VAMPIRIC_GLOVE_MAX_HEALING_PER_HIT = integerValue(createName(ModItems.VAMPIRIC_GLOVE, "maxHealingPerHit"), 6),
             LUCKY_CLOVER_LUCK_BONUS = integerValue(createName(ModItems.LUCKY_CLOVER, "luckBonus"), 2, 100),
             STAR_CLOAK_COOLDOWN = integerValue(createName(ModItems.STAR_CLOAK, "cooldownTicks"), 20, 60 * 60 * 20),
