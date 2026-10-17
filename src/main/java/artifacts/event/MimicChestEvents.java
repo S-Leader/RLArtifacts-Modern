@@ -1,6 +1,6 @@
 package artifacts.event;
 
-import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.entity.MimicEntity;
 import artifacts.registry.ModEntityTypes;
 import net.minecraft.core.BlockPos;
@@ -65,7 +65,7 @@ public final class MimicChestEvents {
     private static boolean tryReplaceUnlootedChest(Player player, BlockPos pos) {
         Level level = player.level();
         if (!level.dimension().equals(Level.OVERWORLD)
-                || Artifacts.CONFIG.common.getUnlootedChestMimicChance() <= 0.0D) {
+                || ModConfig.common.getUnlootedChestMimicChance() <= 0.0D) {
             return false;
         }
 
@@ -80,7 +80,7 @@ public final class MimicChestEvents {
         // The original generated the loot before rolling. If the roll fails,
         // the chest opens/breaks normally and can never be rolled a second time.
         chest.unpackLootTable(player);
-        if (level.random.nextDouble() > Artifacts.CONFIG.common.getUnlootedChestMimicChance()) {
+        if (level.random.nextDouble() > ModConfig.common.getUnlootedChestMimicChance()) {
             return false;
         }
 

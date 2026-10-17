@@ -1,7 +1,7 @@
 package artifacts.client;
 
-import artifacts.Artifacts;
 import artifacts.client.item.renderer.GloveArtifactRenderer;
+import artifacts.config.ModConfig;
 import artifacts.item.wearable.WearableArtifactItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +19,7 @@ public abstract class ArmRenderHandler {
     }
 
     public static void onRenderArm(RenderArmEvent event) {
-        if (!Artifacts.CONFIG.client.showFirstPersonGloves || event.isCanceled()) {
+        if (!ModConfig.client.showFirstPersonGloves.get() || event.isCanceled()) {
             return;
         }
 

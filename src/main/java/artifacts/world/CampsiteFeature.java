@@ -1,6 +1,7 @@
 package artifacts.world;
 
 import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -113,7 +114,7 @@ public class CampsiteFeature extends Feature<CampsiteFeatureConfiguration> {
 
     private void placeCampfire(CampsiteFeatureConfiguration config, WorldGenLevel level, BlockPos origin, RandomSource random) {
         BlockState campfire = config.unlitCampfires().getState(random, origin);
-        if (Artifacts.CONFIG.common.campsite.allowLightSources && random.nextFloat() < 0.10) {
+        if (ModConfig.common.campsite.allowLightSources.get() && random.nextFloat() < 0.10) {
             campfire = config.litCampfires().getState(random, origin);
         }
         setBlock(level, origin, campfire);
@@ -122,7 +123,7 @@ public class CampsiteFeature extends Feature<CampsiteFeatureConfiguration> {
     private void placeLightSource(CampsiteFeatureConfiguration config, WorldGenLevel level, BlockPos pos, RandomSource random) {
         if (random.nextFloat() < 0.5) {
             BlockState lightSource = config.unlitLightSources().getState(random, pos);
-            if (Artifacts.CONFIG.common.campsite.allowLightSources && random.nextFloat() < 0.30) {
+            if (ModConfig.common.campsite.allowLightSources.get() && random.nextFloat() < 0.30) {
                 lightSource = config.lightSources().getState(random, pos);
             }
             setBlock(level, pos, lightSource);
@@ -166,7 +167,7 @@ public class CampsiteFeature extends Feature<CampsiteFeatureConfiguration> {
             setBlock(level, pos.below(), Blocks.TNT.defaultBlockState());
             chest = Blocks.TRAPPED_CHEST.defaultBlockState();
             setBlock(level, pos, Blocks.TRAPPED_CHEST.defaultBlockState().setValue(ChestBlock.FACING, Direction.Plane.HORIZONTAL.getRandomDirection(random)));
-        } else if (Artifacts.CONFIG.common.campsite.useModdedChests) {
+        } else if (ModConfig.common.campsite.useModdedChests.get()) {
             chest = ModTags.getTag(ModTags.CAMPSITE_CHESTS)
                     .getRandomElement(random)
                     .map(Holder::value)

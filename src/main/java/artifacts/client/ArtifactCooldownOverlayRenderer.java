@@ -1,6 +1,6 @@
 package artifacts.client;
 
-import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.item.wearable.WearableArtifactItem;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.entity.player.Player;
@@ -16,13 +16,13 @@ public class ArtifactCooldownOverlayRenderer {
 
     @SuppressWarnings("unused")
     public static void render(ForgeGui gui, GuiGraphics guiGraphics, float partialTick, int screenWidth, int screenHeight) {
-        if (!Artifacts.CONFIG.client.enableCooldownOverlay || !(gui.getMinecraft().getCameraEntity() instanceof Player player)) {
+        if (!ModConfig.client.enableCooldownOverlay.get() || !(gui.getMinecraft().getCameraEntity() instanceof Player player)) {
             return;
         }
 
         CuriosApi.getCuriosInventory(player).ifPresent(handler -> {
             int y = screenHeight - 16 - 3;
-            int cooldownOverlayOffset = Artifacts.CONFIG.client.cooldownOverlayOffset;
+            int cooldownOverlayOffset = ModConfig.client.cooldownOverlayOffset.get();
             int step = 20;
             int start = screenWidth / 2 + 91 + cooldownOverlayOffset;
 

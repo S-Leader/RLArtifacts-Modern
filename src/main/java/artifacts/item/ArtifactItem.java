@@ -1,6 +1,7 @@
 package artifacts.item;
 
 import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -28,7 +29,7 @@ public abstract class ArtifactItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, Level world, List<Component> tooltipList, TooltipFlag flags) {
-        if (Artifacts.CONFIG.client.showTooltips) {
+        if (ModConfig.client.showTooltips.get()) {
             List<MutableComponent> tooltip = new ArrayList<>();
             addTooltip(stack, tooltip);
             tooltip.forEach(line -> tooltipList.add(line.withStyle(ChatFormatting.GRAY)));

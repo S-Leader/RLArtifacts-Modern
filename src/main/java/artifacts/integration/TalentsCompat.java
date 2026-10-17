@@ -8,7 +8,6 @@ import net.minecraftforge.fml.ModList;
 import java.lang.reflect.Method;
 import java.util.List;
 
-/** Optional integration with the Talents item-level lock system. */
 public final class TalentsCompat {
 
     private static final String TALENTS_MOD_ID = "talents";

@@ -6,8 +6,8 @@ import artifacts.item.wearable.LuckyCloverItem;
 import artifacts.item.wearable.WearableArtifactItem;
 import artifacts.item.wearable.WhoopeeCushionItem;
 import artifacts.item.wearable.belt.AntidoteVesselItem;
-import artifacts.item.wearable.belt.BubbleWrapItem;
 import artifacts.item.wearable.belt.BottledFartItem;
+import artifacts.item.wearable.belt.BubbleWrapItem;
 import artifacts.item.wearable.belt.CloudInABottleItem;
 import artifacts.item.wearable.body.StarCloakItem;
 import artifacts.item.wearable.hands.*;
@@ -25,7 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-@SuppressWarnings("UnstableApiUsage")
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, Artifacts.MOD_ID);

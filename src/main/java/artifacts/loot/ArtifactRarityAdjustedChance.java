@@ -1,6 +1,6 @@
 package artifacts.loot;
 
-import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.registry.ModLootConditions;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -19,10 +19,10 @@ public record ArtifactRarityAdjustedChance(float defaultProbability) implements 
 
     @Override
     public boolean test(LootContext context) {
-        if (Artifacts.CONFIG.common.getArtifactRarity() > 9999) {
+        if (ModConfig.common.getArtifactRarity() > 9999) {
             return false;
         }
-        float r = (float) Artifacts.CONFIG.common.getArtifactRarity();
+        float r = (float) ModConfig.common.getArtifactRarity();
         float p = defaultProbability;
         float adjustedProbability = p / (p + r - r * p);
         return context.getRandom().nextFloat() < adjustedProbability;

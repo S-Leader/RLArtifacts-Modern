@@ -7,23 +7,18 @@ import artifacts.event.ArtifactEventsForge;
 import artifacts.item.wearable.WearableArtifactItem;
 import artifacts.network.NetworkHandler;
 import artifacts.registry.*;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
-import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartedEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
@@ -38,13 +33,9 @@ public class Artifacts {
     public static final String MOD_ID = "artifacts";
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public static ModConfig CONFIG;
-
     public Artifacts() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        AutoConfig.register(ModConfig.class, PartitioningSerializer.wrap(JanksonConfigSerializer::new));
-        CONFIG = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
 
         NetworkHandler.register();
 
@@ -71,12 +62,7 @@ public class Artifacts {
     }
 
     private void registerConfig() {
-        ModLoadingContext.get().registerExtensionPoint(
-                ConfigScreenHandler.ConfigScreenFactory.class,
-                () -> new ConfigScreenHandler.ConfigScreenFactory(
-                        (client, parent) -> AutoConfig.getConfigScreen(ModConfig.class, parent).get()
-                )
-        );
+        ModConfig.register();
     }
 
     private void onAttachCapabilities(AttachCapabilitiesEvent<ItemStack> event) {

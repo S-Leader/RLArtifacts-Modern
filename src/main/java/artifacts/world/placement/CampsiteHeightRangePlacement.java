@@ -1,6 +1,6 @@
 package artifacts.world.placement;
 
-import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.registry.ModPlacementModifierTypes;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
@@ -27,8 +27,8 @@ public class CampsiteHeightRangePlacement extends PlacementModifier {
 
     @Override
     public Stream<BlockPos> getPositions(PlacementContext context, RandomSource randomSource, BlockPos pos) {
-        int minY = Artifacts.CONFIG.common.campsite.minY;
-        int maxY = Artifacts.CONFIG.common.campsite.maxY;
+        int minY = ModConfig.common.campsite.minY.get();
+        int maxY = ModConfig.common.campsite.maxY.get();
         if (minY > maxY) {
             return Stream.of();
         }

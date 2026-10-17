@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
-/** Combines the Thorn, Flame and Shock Pendant effects from the original mod. */
 public class UltimatePendantItem extends WearableArtifactItem {
 
     @Override

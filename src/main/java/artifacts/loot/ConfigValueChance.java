@@ -1,6 +1,6 @@
 package artifacts.loot;
 
-import artifacts.Artifacts;
+import artifacts.config.ModConfig;
 import artifacts.registry.ModLootConditions;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -54,8 +54,8 @@ public class ConfigValueChance implements LootItemCondition {
     }
 
     private enum ChanceConfig {
-        ARCHAEOLOGY("archaeology", () -> Artifacts.CONFIG.common.archaeologyChance),
-        ENTITY_EQUIPMENT("entity_equipment", () -> Artifacts.CONFIG.common.entityEquipmentChance);
+        ARCHAEOLOGY("archaeology", ModConfig.common.archaeologyChance),
+        ENTITY_EQUIPMENT("entity_equipment", ModConfig.common.entityEquipmentChance);
 
         final String name;
         final Supplier<Double> value;
