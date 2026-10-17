@@ -40,7 +40,4 @@ Umbrella, Everlasting Beef, Eternal Steak, and the Mimic Spawn Egg remain becaus
 
 - Minecraft 1.20.1
 - Forge 47.x
-- Architectury API
-- Cloth Config
 - Curios API
-- ExpandAbility and MixinExtras are nested in the built Forge JAR.

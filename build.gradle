@@ -90,8 +90,6 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${forge_version}"
 
-    implementation fg.deobf("be.florens:expandability-forge:${expandability_version}")
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
     implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${mixin_extras_version}"))
